@@ -1,9 +1,14 @@
-body { background-image: linear-gradient(#1ccf8e,black );
+body { background-image: linear-gradient(#fc5e55,#fa4083 );
    font-family: Arial, Helvetica, sans-serif;
 color: white;
 font-size: 1.125rem;
 }
+a {
+color: white;
+text-decoration:none;
 
+
+}
 .container {
     width: 1024px;
    min-height:300px ;
@@ -17,6 +22,7 @@ justify-content:space-between ;
 align-items:center;
 padding-top: 20px;
 padding-bottom: 20px;
+border-bottom: 1px solid  lightgrey;
 }
 
 main {
@@ -25,29 +31,46 @@ display: flex;
 align-items: center;
 }
 .cards {
-    background-color: rgb(27, 136, 27);
-    min-height: 300px;
+   min-height: 300px;
     display:flex ;
     justify-content:space-between ;
+   text-align: center
     }
 
  .card1 {
-background-color: rgb(218, 28, 91);
+background-image: url(/assets/image-background-card1.jpg);
 width: 30%;
-min-height: 300px;
+min-height: 250px;
+border-radius: 20px;
+background-position: bottom;
+ background-size: cover; 
+
  }   
  .card2 {
-    background-color: rgb(107, 13, 28);
+    background-image: url(/assets/image-background-card2.jpg); 
     width: 30%;
-    min-height: 300px; 
+    min-height: 250px;
+    border-radius: 20px;
+    background-position: bottom;
+     background-size: cover; 
+    
      }   
      .card3 {
-        background-color:red;
+   background-image: url(/assets/image-background-card3.jpg); 
         width: 30%;
-        min-height: 300px; 
-         }   
+        min-height: 250px;
+        border-radius: 20px;
+         background-position: bottom;
+        background-size: cover; 
+         } 
+      .card1, .card2 , .card3 {
+             padding: 30px 30px 20px 30px;
+             box-sizing: border-box;
+         }  
+
 .herobox1 {
 flex: 2;
+padding-right: 100px;
 }
 
 .herobox2{
@@ -55,13 +78,91 @@ flex: 1;
 }
 
 h1 {
-   font-size: 40px;
-   font-family: 'Bungee Shade';
+   font-size: 3.25rem;
+   font-family: 'playfair display',serif;
+   margin-bottom: 1rem;
 }
 
 img {
    border-radius:20px;
  }
+
+p {
+line-height: 1.75rem;
+margin-bottom: 0.5rem;
+}
+h1 {
+   font-size: 3.25rem;
+   font-family:'playfair display',serif;
+   margin-bottom: 1rem;
+}
+h2 {
+   font: size 2rem;
+   font-family:'playfair display',serif;
+   margin-top: 20px;
+}
+
+.cards p {
+   font-size: 0.85rem;
+   line-height: 1.2;
+   margin:  10px 30px  20px 30px;
+}
+
+.mybutton {
+   background-color: white;
+   color: #fa4083;
+   font-family:'playfair display',serif;
+   padding: 11px 25px;
+   box-shadow: 5px 5px rgb(163, 147, 147);}
+
+.mybutton:hover {
+   background-color: rgb(29,213,103 )
+}
+
+
+
+
+
+
+a.mybutton {
+  display: inline-block;
+margin: 20px;
+border-radius: 20px;
+}
+
+nav a.mybutton {
+margin-left: 5px;
+}
+
+.navbutton {
+  border:1px solid white; 
+  padding: 11px 25px;
+  font-family:'playfair display',serif;
+}
+.testimonials {
+display: flex;
+flex-wrap:wrap ;
+justify-content: space-between;
+margin-bottom: 100px;
+
+}
+
+
+.tbox {
+   width: 47%;
+   padding: 50px;
+   border:1px solid white ;
+   box-sizing: border-box;
+   margin-top: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 
