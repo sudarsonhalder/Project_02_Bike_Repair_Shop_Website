@@ -1,5 +1,12 @@
-body { background-image: linear-gradient(#fc5e55,#fa4083 );
-   font-family: Arial, Helvetica, sans-serif;
+html {
+   background-image: linear-gradient(#fc5e55,#fa4083 );
+
+}
+body { 
+   background-image: url(assets/image-lion-background.png);
+   background-position: top  center;
+   background-repeat: none;
+ font-family: 'Roboto', sans-serif;
 color: white;
 font-size: 1.125rem;
 }
@@ -24,11 +31,15 @@ padding-top: 20px;
 padding-bottom: 20px;
 border-bottom: 1px solid  lightgrey;
 }
-
 main {
 min-height: 300px;
 display: flex;
 align-items: center;
+}
+
+.main2 {
+min-height:300px;
+padding-top: 50px;
 }
 .cards {
    min-height: 300px;
@@ -116,14 +127,8 @@ h2 {
    box-shadow: 5px 5px rgb(163, 147, 147);}
 
 .mybutton:hover {
-   background-color: rgb(29,213,103 )
+   background-color: rgb(20, 19, 19)
 }
-
-
-
-
-
-
 a.mybutton {
   display: inline-block;
 margin: 20px;
@@ -138,6 +143,7 @@ margin-left: 5px;
   border:1px solid white; 
   padding: 11px 25px;
   font-family:'playfair display',serif;
+  display: inline-block
 }
 .testimonials {
 display: flex;
@@ -157,6 +163,50 @@ margin-bottom: 100px;
 }
 
 
+ .navbutton:hover .dropdown {
+   display:block;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: #ddd;}
+ 
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ .dropdown:hover .navbutton {background-color:#0c0c0c;}
+
+.inputwrapper {
+margin-bottom: 20px;
+}
+
+input [type=text], input[type=Email], textarea  {
+   padding: 12px 20px ;
+   width: 40%;
+   font-family: 'Roboto', sans-serif;
+   font-size:  0.85rem ;
+   
+   }
+
+   
 
 
 
