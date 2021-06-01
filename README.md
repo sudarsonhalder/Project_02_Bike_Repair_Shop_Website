@@ -24,4 +24,4 @@ It is a One page Application.
 
 ## Setup
 1.Clone the repository.  
-2.Run the command npm install.
+
